@@ -2,6 +2,9 @@ package Vista;
 
 import javax.swing.*;
 import java.awt.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class GUI {
 
@@ -38,17 +41,51 @@ public class GUI {
             marco.add(paneltxtscroll);
 
             //Fecha1
+
+            Calendar calendar = Calendar.getInstance();
+            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+            System.out.println(formatter.format(calendar.getTime()));
+
+
+            Date today = new Date();
             JPanel paneltxtfecha = new JPanel();
             JPanel panelfecha = new JPanel();
             JLabel txtfecha = new JLabel("Spinner");
             paneltxtfecha.add(txtfecha);
             paneltxtfecha.setLayout(new FlowLayout(10,10,2));
             panelfecha.setLayout(new FlowLayout(10,100,2));
-            JSpinner Spinnerfecha = new JSpinner();
+            JSpinner Spinnerfecha = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
+            JSpinner.DateEditor editor = new JSpinner.DateEditor(Spinnerfecha, "dd/MM/yyyy HH:mm:ss");
+            Spinnerfecha.setEditor(editor);
+
 
             panelfecha.add(Spinnerfecha);
-            paneltxtfecha.add(panellscroll);
+            paneltxtfecha.add(panelfecha);
             marco.add(paneltxtfecha);
+
+
+            //Fecha2
+            JPanel paneltxtfecha2 = new JPanel();
+            JPanel panelfecha2 = new JPanel();
+            JLabel txtfecha2 = new JLabel("Spinner");
+            paneltxtfecha2.add(txtfecha2);
+            paneltxtfecha2.setLayout(new FlowLayout(10,10,2));
+            panelfecha2.setLayout(new FlowLayout(10,50,2));
+            JSpinner Spinnerfechadia = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
+            JSpinner.DateEditor editordia = new JSpinner.DateEditor(Spinnerfechadia, "dd");
+            Spinnerfechadia.setEditor(editordia);
+            JSpinner Spinnerfechames = new JSpinner();
+            Spinnerfechames.setValue(30);
+            JSpinner Spinnerfechaano = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
+            JSpinner.DateEditor editorano = new JSpinner.DateEditor(Spinnerfechaano, "yyyy");
+            Spinnerfechaano.setEditor(editorano);
+
+
+            panelfecha2.add(Spinnerfechadia);
+            panelfecha2.add(Spinnerfechames);
+            panelfecha2.add(Spinnerfechaano);
+            paneltxtfecha2.add(panelfecha2);
+            marco.add(paneltxtfecha2);
 
 
 
@@ -60,6 +97,7 @@ public class GUI {
             slider.setVisible(true);
             barra.setVisible(true);
             paneltxtscroll.setVisible(true);
+            Spinnerfechaano.setVisible(true);
 
 
         }
