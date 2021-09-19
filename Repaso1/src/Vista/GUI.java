@@ -1,7 +1,11 @@
 package Vista;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -22,11 +26,18 @@ public class GUI {
             JLabel txtslider = new JLabel("Slider");
             norte.add(txtslider);
             norte.setLayout(new FlowLayout(10,10,2));
-            panelslider.setLayout(new FlowLayout(10,100,2));
+            panelslider.setLayout(new FlowLayout(10,80,2));
             JSlider slider = new JSlider(0,30);
+            JTextArea texto = new JTextArea();
+            texto.setText("15");
+
+
             panelslider.add(slider);
             norte.add(panelslider);
+            norte.add(texto);
             marco.add(norte);
+
+
 
             //Scrollbar
             JPanel paneltxtscroll = new JPanel();
@@ -34,11 +45,25 @@ public class GUI {
             JLabel txtscroll = new JLabel("ScrollBar");
             paneltxtscroll.add(txtscroll);
             paneltxtscroll.setLayout(new FlowLayout(10,10,2));
-            panellscroll.setLayout(new FlowLayout(10,100,2));
-            JScrollBar barra = new JScrollBar(0,25,200,0,300);
+            panellscroll.setLayout(new FlowLayout(10,80,2));
+            JScrollBar barra = new JScrollBar(0,25,45,0,300);
+            barra.setPreferredSize(new Dimension(200,20));
+            JTextArea valorbarra = new JTextArea();
+            valorbarra.setText("25");
             panellscroll.add(barra);
             paneltxtscroll.add(panellscroll);
+            paneltxtscroll.add(valorbarra);
             marco.add(paneltxtscroll);
+
+
+            barra.addAdjustmentListener(new AdjustmentListener() {
+              @Override
+              public void adjustmentValueChanged(AdjustmentEvent ae) {
+                  String textobarra = barra.getValue() + "";
+                  valorbarra.setText(textobarra);
+              }
+            });
+
 
             //Fecha1
 
@@ -74,8 +99,9 @@ public class GUI {
             JSpinner Spinnerfechadia = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
             JSpinner.DateEditor editordia = new JSpinner.DateEditor(Spinnerfechadia, "dd");
             Spinnerfechadia.setEditor(editordia);
-            JSpinner Spinnerfechames = new JSpinner();
-            Spinnerfechames.setValue(30);
+            JSpinner Spinnerfechames = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
+            JSpinner.DateEditor editormes = new JSpinner.DateEditor(Spinnerfechames, "MMMM");
+            Spinnerfechames.setEditor(editormes);
             JSpinner Spinnerfechaano = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
             JSpinner.DateEditor editorano = new JSpinner.DateEditor(Spinnerfechaano, "yyyy");
             Spinnerfechaano.setEditor(editorano);
@@ -98,6 +124,14 @@ public class GUI {
             barra.setVisible(true);
             paneltxtscroll.setVisible(true);
             Spinnerfechaano.setVisible(true);
+            texto.setVisible(true);
+            valorbarra.setVisible(true);
+
+            slider.addChangeListener(new ChangeListener(){
+                public void stateChanged(ChangeEvent e) {
+                    String sleepSense = slider.getValue() + "";
+                    texto.setText(sleepSense);
+                }});
 
 
         }
