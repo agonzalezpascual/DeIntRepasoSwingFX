@@ -106,7 +106,9 @@ public class Complejos {
                     null);
 
         }else if(rb6.isSelected()){
-
+            String[] opciones ={"1","2","3"};
+            JComboBox jcb = new JComboBox(opciones);
+            JOptionPane.showMessageDialog(null, jcb, "ComboBox", JOptionPane.QUESTION_MESSAGE);
 
         }
     }
