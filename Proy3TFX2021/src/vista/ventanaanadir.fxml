@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VentanaanadirController">
+   <children>
+      <ImageView fitHeight="463.0" fitWidth="548.0" opacity="0.15" pickOnBounds="true">
+         <image>
+            <Image url="@../logoFondo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="60.0" text="DNI">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtDNI" layoutX="95.0" layoutY="55.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtNom" layoutX="95.0" layoutY="103.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="24.0" layoutY="108.0" text="Nombre">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtDir" layoutX="95.0" layoutY="156.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="19.0" layoutY="161.0" text="Dirección">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtTel" layoutX="95.0" layoutY="208.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="22.0" layoutY="213.0" text="Teléfono">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="329.0" layoutY="60.0" text="Fecha de nacimiento">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="239.0" text="Factor RH">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="177.0" prefHeight="21.0" prefWidth="122.0" text="Grupo sanguíneo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <DatePicker fx:id="selFecNa" layoutX="293.0" layoutY="103.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></DatePicker>
+      <ComboBox fx:id="comboSang" layoutX="419.0" layoutY="172.0" prefHeight="25.0" prefWidth="110.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="comboRH" layoutX="419.0" layoutY="234.0" prefHeight="25.0" prefWidth="110.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="botGuar" layoutX="206.0" layoutY="365.0" mnemonicParsing="false" onAction="#handlerGuardar" prefHeight="31.0" prefWidth="136.0" text="Guardar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="botSal" layoutX="206.0" layoutY="411.0" mnemonicParsing="false" onAction="#handlerSalir" prefHeight="31.0" prefWidth="136.0" text="Salir">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="19.0" layoutY="315.0" text="Localidad">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtLoc" layoutX="95.0" layoutY="310.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="46.0" layoutY="263.0" text="Email">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtEmail" layoutX="95.0" layoutY="258.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtCodPos" layoutX="340.0" layoutY="310.0" prefHeight="31.0" prefWidth="110.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="310.0" layoutY="315.0" text="CP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
