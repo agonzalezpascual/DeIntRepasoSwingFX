@@ -7,6 +7,7 @@ public class complejos {
     public static void main(String[] args) {
 
         //Creamos el marco principal
+        //SASASAS
         JFrame marcoP = new JFrame("Mi primer interfaz GUI");
         marcoP.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         marcoP.setSize(350, 350);
