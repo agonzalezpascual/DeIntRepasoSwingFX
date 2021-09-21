@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Complejos {
+public class complejos {
     public static void main(String[] args) {
 
         //Creamos el marco principal

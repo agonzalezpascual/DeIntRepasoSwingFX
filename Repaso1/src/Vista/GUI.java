@@ -26,7 +26,7 @@ public class GUI {
             JLabel txtslider = new JLabel("Slider");
             norte.add(txtslider);
             norte.setLayout(new FlowLayout(10,10,2));
-            panelslider.setLayout(new FlowLayout(10,80,2));
+            panelslider.setLayout(new FlowLayout(10,90,2));
             JSlider slider = new JSlider(0,30);
             JTextArea texto = new JTextArea();
             texto.setText("15");
@@ -75,10 +75,10 @@ public class GUI {
             Date today = new Date();
             JPanel paneltxtfecha = new JPanel();
             JPanel panelfecha = new JPanel();
-            JLabel txtfecha = new JLabel("Spinner");
+            JLabel txtfecha = new JLabel("Spinner fecha completa");
             paneltxtfecha.add(txtfecha);
             paneltxtfecha.setLayout(new FlowLayout(10,10,2));
-            panelfecha.setLayout(new FlowLayout(10,100,2));
+            panelfecha.setLayout(new FlowLayout(10,42,2));
             JSpinner Spinnerfecha = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
             JSpinner.DateEditor editor = new JSpinner.DateEditor(Spinnerfecha, "dd/MM/yyyy HH:mm:ss");
             Spinnerfecha.setEditor(editor);
@@ -92,10 +92,10 @@ public class GUI {
             //Fecha2
             JPanel paneltxtfecha2 = new JPanel();
             JPanel panelfecha2 = new JPanel();
-            JLabel txtfecha2 = new JLabel("Spinner");
+            JLabel txtfecha2 = new JLabel("Spinner fecha desglosada");
             paneltxtfecha2.add(txtfecha2);
             paneltxtfecha2.setLayout(new FlowLayout(10,10,2));
-            panelfecha2.setLayout(new FlowLayout(10,50,2));
+            panelfecha2.setLayout(new FlowLayout(10,30,2));
             JSpinner Spinnerfechadia = new JSpinner(new SpinnerDateModel(today, null, null, Calendar.MONTH));
             JSpinner.DateEditor editordia = new JSpinner.DateEditor(Spinnerfechadia, "dd");
             Spinnerfechadia.setEditor(editordia);
