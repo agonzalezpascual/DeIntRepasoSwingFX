@@ -20,8 +20,8 @@ public class IOBaseDatos {
     public void actualizaRegistros(String actualiza) throws SQLException{
         try {
             Class.forName("org.mariadb.jdbc.Driver");
-            String urlCon = "jdbc:mariadb://localhost:3306/proy3te5";
-            Connection conexBd = DriverManager.getConnection(urlCon, "root", "");
+            String urlCon = "jdbc:mariadb://127.0.0.1:3306/proy3te5";
+            Connection conexBd = DriverManager.getConnection(urlCon, "root", "root");
             Statement encapsulaCons = conexBd.createStatement();
 
             int filActualizadas = encapsulaCons.executeUpdate(actualiza);
@@ -40,8 +40,8 @@ public class IOBaseDatos {
         ResultSet resulCons = null;
         try {
             Class.forName("org.mariadb.jdbc.Driver");
-            String urlCon = "jdbc:mariadb://localhost:3306/proy3te5";
-            Connection conexBd = DriverManager.getConnection(urlCon, "root", "");
+            String urlCon = "jdbc:mariadb://127.0.0.1:3306/proy3te5";
+            Connection conexBd = DriverManager.getConnection(urlCon, "root", "root");
             Statement encapsulaCons = conexBd.createStatement();
 
             //"INSERT INTO DONANTES(DNI, Nombre, Direccion, CodPostal, Localidad, FechaNac, Correo, Telefono, GrupoSang, FactorRH) VALUES('" + dni + "', '" + nomDonante + "', '" + direccionDonante + "', '" + codPostal + "', '" + localidad + "', '" + fechaNac + "', '" + mail + "', '" + telefono + "', '" + grupoSang + "', '" + factorRH + "')
