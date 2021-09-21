@@ -73,6 +73,7 @@ public class GUI {
 
 
             Date today = new Date();
+            //hola
             JPanel paneltxtfecha = new JPanel();
             JPanel panelfecha = new JPanel();
             JLabel txtfecha = new JLabel("Spinner fecha completa");
