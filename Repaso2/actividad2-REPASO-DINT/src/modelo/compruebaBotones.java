@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class compruebaBotones {
 
-    BufferedImage imagen = ImageIO.read(new File("C:\\Users\\User-01\\Desktop\\actividad2-REPASO-DINT\\src\\icono.png"));
+    BufferedImage imagen = ImageIO.read(new File("src/icono.png"));
     Image image = imagen.getScaledInstance(40,40, Image.SCALE_DEFAULT);
     ImageIcon icono = new ImageIcon(image);
 
@@ -52,6 +52,9 @@ public class compruebaBotones {
                     null);
 
         } else if (rb6.isSelected()) {
+            String[] opciones ={"1","2","3"};
+            JComboBox jcb = new JComboBox(opciones);
+            JOptionPane.showMessageDialog(null, jcb, "ComboBox", JOptionPane.QUESTION_MESSAGE);
 
 
         }
