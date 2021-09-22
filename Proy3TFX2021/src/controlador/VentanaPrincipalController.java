@@ -5,6 +5,7 @@
  */
 package controlador;
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -40,6 +41,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import javax.swing.UIManager;
 import modelo.Donacion;
 import modelo.Donante;
 import modelo.IOBaseDatos;
@@ -157,12 +159,14 @@ public class VentanaPrincipalController implements Initializable {
      * @param url
      * @param rb 
      */
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
+        
         try {
             iniciaRegistros();
         } catch (SQLException ex) {

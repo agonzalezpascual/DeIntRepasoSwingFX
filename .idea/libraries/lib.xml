@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Proy3TFX2021/dist/lib/flatlaf-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Proy3TFX2021/dist/lib/mariadb-java-client-2.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
