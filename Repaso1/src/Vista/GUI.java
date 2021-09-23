@@ -1,6 +1,5 @@
 
 
-import com.formdev.flatlaf.FlatDarkLaf;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -15,6 +14,12 @@ import java.util.Date;
 public class GUI {
 
         public static void main(String[] args){
+
+            try {
+                UIManager.setLookAndFeel("com.formdev.flatlaf.FlatLightLaf");
+            } catch (Exception ex) {
+                System.err.println("Failed to initialize LaF");
+            }
 
             JFrame marco = new JFrame("Ejercicio Repaso SWING 1");
             marco.setBounds(400,250,500,380);

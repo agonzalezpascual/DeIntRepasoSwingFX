@@ -87,7 +87,7 @@ public class compruebaBotones {
 
 
         } else if (radio7.isSelected()) {
-            JOptionPane.showMessageDialog(null, "Icono personalizad", "Mensaje con icono personalizado",
+            JOptionPane.showMessageDialog(null, "Icono personalizado", "Mensaje con icono personalizado",
                     JOptionPane.PLAIN_MESSAGE, icono);
 
         }

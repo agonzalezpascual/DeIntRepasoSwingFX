@@ -53,9 +53,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.GUI">
+  <component name="RunManager" selected="Application.GUI (1)">
     <configuration name="Complejos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Complejos" />
+      <module name="Repaso1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI" />
       <module name="Repaso1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,19 +81,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GUI (1)" />
         <item itemvalue="Application.GUI" />
         <item itemvalue="Application.Complejos" />
       </list>
@@ -105,6 +115,7 @@
       <workItem from="1632071659527" duration="3689000" />
       <workItem from="1632117756692" duration="599000" />
       <workItem from="1632211780603" duration="1687000" />
+      <workItem from="1632385317330" duration="323000" />
     </task>
     <servers />
   </component>

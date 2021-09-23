@@ -1,14 +1,12 @@
 
->
-java:S1604="(Make this anonymous inner class a lambda(¦“Ñø
-f	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÈµà
 ?
-java:S1604…"(Make this anonymous inner class a lambda(Õ°÷¡
-S	java:S106J"9Replace this use of System.out or System.err by a logger.(¶ßïµıÿÿÿÿ
-k	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÌÆşÿÿÿÿ
+java:S1604„"(Make this anonymous inner class a lambda(Õ°÷¡
+f	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åáÔ”
+>
+java:S1604<"(Make this anonymous inner class a lambda(¦“Ñø
+k	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÌÆşÿÿÿÿ
+f	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ëÁ§
 d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ıŸŞ¶øÿÿÿÿ
-f	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ëÁ§
-f	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åáÔ”
-^
-java:S1128"<Remove this unused import 'com.formdev.flatlaf.FlatDarkLaf'.(ÄİÓäûÿÿÿÿ8íıåÌÀ/
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ıŸŞ¶øÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(¶ßïµıÿÿÿÿ
+f	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÈµà

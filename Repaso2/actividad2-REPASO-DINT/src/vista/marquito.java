@@ -14,10 +14,16 @@ public class marquito extends JFrame {
 
         compruebaBotones CB = new compruebaBotones();
 
+        try {
+            UIManager.setLookAndFeel("com.formdev.flatlaf.FlatLightLaf");
+        } catch (Exception ex) {
+            System.err.println("Failed to initialize LaF");
+        }
+
         JFrame marco = new JFrame("Repaso Java Swing 2");
-        marco.setSize(350, 350);
+        marco.setSize(350, 360);
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        GridLayout distribucion = new GridLayout(10,1);
+        GridLayout distribucion = new GridLayout(9,1);
 
 
 
@@ -28,6 +34,7 @@ public class marquito extends JFrame {
         //Creación de paneles para añadirlos posteriormente a las pestañas
         JPanel panel1 = new JPanel();
         JPanel panel2 = new JPanel();
+        panel2.setLayout(new GridLayout(8,1,0,5));
 
         JRadioButton radio1 = new JRadioButton("Icono y mensaje por defecto");
         JRadioButton radio2 = new JRadioButton("Mensaje sin icono");
@@ -102,7 +109,7 @@ public class marquito extends JFrame {
         btnMostrar2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                labelResult.setText("Resultado de la elección");
+
                 CB.selection2(radio1, radio2, radio3, radio4, radio5, radio6, radio7);
             }
 
@@ -135,7 +142,7 @@ public class marquito extends JFrame {
         pestañas.addTab("Simples", panel1);
         pestañas.addTab("Complejos", panel2);
         panel1.setLayout(distribucion);
-        panel2.setLayout(distribucion);
+
 
         marco.add(pestañas);
         marco.setVisible(true);
