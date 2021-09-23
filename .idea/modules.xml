@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DeIntRepasoSwingFX.iml" filepath="$PROJECT_DIR$/.idea/DeIntRepasoSwingFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proy3TFX2021/Proy3TFX2021.iml" filepath="$PROJECT_DIR$/Proy3TFX2021/Proy3TFX2021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Repaso1/Repaso1.iml" filepath="$PROJECT_DIR$/Repaso1/Repaso1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Repaso2/Repaso2.iml" filepath="$PROJECT_DIR$/Repaso2/Repaso2.iml" />
+    </modules>
+  </component>
+</project>

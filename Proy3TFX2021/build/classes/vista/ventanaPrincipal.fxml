@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.effect.*?>
@@ -90,10 +91,18 @@
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
-                           </cursor></Button>
+                           </cursor>
+                        </Button>
                      </children>
                   </AnchorPane>
             </content>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../gotasangre.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
           </Tab>
           <Tab text="Donaciones">
             <content>
@@ -146,6 +155,13 @@
                      </children>
                   </AnchorPane>
             </content>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Jeringa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
           </Tab>
             <Tab text="Compatibilidad">
               <content>
@@ -185,6 +201,13 @@
                      </children>
                   </AnchorPane>
               </content>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../puzle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Tab>
         </tabs>
       </TabPane>

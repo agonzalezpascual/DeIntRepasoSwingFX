@@ -1,9 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+   /*
+ * To00hange this license header, choose License Headers in Project Properties.
+ * To 000nge this template file, choose Tools | Templates
+ * and o0en the template in the editor.
  */
 package controlador;
+
 
 import java.io.IOException;
 import java.net.URL;
@@ -45,6 +46,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import javax.swing.UIManager;
 import modelo.Donacion;
 import modelo.Donante;
 import modelo.IOBaseDatos;
@@ -162,12 +164,14 @@ public class VentanaPrincipalController implements Initializable {
      * @param url
      * @param rb 
      */
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
+        
         try {
             iniciaRegistros();
         } catch (SQLException ex) {
