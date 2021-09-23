@@ -1,0 +1,13 @@
+
+f	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åáÔ”
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÃŒ ­
+>
+java:S1604;"(Make this anonymous inner class a lambda(¦“Ñø
+?
+java:S1604‚"(Make this anonymous inner class a lambda(Õ°÷¡
+k	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÌÆþÿÿÿÿ
+f	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÈµà
+d
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ýŸÞ¶øÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(¶ßïµýÿÿÿÿ
+f	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ëÁ§
