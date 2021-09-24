@@ -396,7 +396,7 @@ public class VentanaPrincipalController implements Initializable {
      * @param event ActionEvent
      */
     @FXML
-    private void modificaDonante(ActionEvent event) {
+    private void modificaDonante() {
         /*try{
             String dni = this.txtDNI.getText();
         String nom = this.txtNom.getText();
@@ -653,7 +653,14 @@ public class VentanaPrincipalController implements Initializable {
         });
      
         item1.setOnAction((eItem1) -> {
-    System.out.println("Has seleccionado borrar");
+            try {
+                eliminarDonante();
+            } catch (SQLException ex) {
+                Logger.getLogger(VentanaPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+});
+        item2.setOnAction((eItem1) -> {
+    modificaDonante();
 });
     }
   
