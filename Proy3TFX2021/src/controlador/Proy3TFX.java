@@ -26,7 +26,7 @@ public class Proy3TFX extends Application {
     
 
         
-        Parent root = FXMLLoader.load(getClass().getResource("/vista/ventanaPrincipal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/vista/VentanaAbrir.fxml"));
         
         Scene scene = new Scene(root);
         stage.setTitle("Proyecto Banco de Sangre");
