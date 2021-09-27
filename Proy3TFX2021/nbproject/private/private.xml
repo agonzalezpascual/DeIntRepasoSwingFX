@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User-01/Desktop/Luismi2021/Repositorios/acceso-a-datos-tema-1/DeIntRepasoSwingFX/Proy3TFX2021/nbproject/jfx-impl.xml</file>
-            <file>file:/C:/Users/User-01/Desktop/Luismi2021/Repositorios/acceso-a-datos-tema-1/DeIntRepasoSwingFX/Proy3TFX2021/src/controlador/Proy3TFX.java</file>
+            <file>file:/C:/Users/Luismi/Desktop/Repositorios/Repositorio2021/DeIntRepasoSwingFX/Proy3TFX2021/src/modelo/IOBaseDatos.java</file>
+            <file>file:/C:/Users/Luismi/Desktop/Repositorios/Repositorio2021/DeIntRepasoSwingFX/Proy3TFX2021/src/vista/ventanaPrincipal.fxml</file>
+            <file>file:/C:/Users/Luismi/Desktop/Repositorios/Repositorio2021/DeIntRepasoSwingFX/Proy3TFX2021/src/controlador/Proy3TFX.java</file>
+            <file>file:/C:/Users/Luismi/Desktop/Repositorios/Repositorio2021/DeIntRepasoSwingFX/Proy3TFX2021/src/controlador/VentanaPrincipalController.java</file>
         </group>
     </open-files>
 </project-private>
