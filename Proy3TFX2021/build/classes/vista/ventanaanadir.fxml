@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
@@ -10,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VentanaanadirController">
    <children>
-      <ImageView fitHeight="463.0" fitWidth="548.0" opacity="0.15" pickOnBounds="true">
+      <ImageView fitHeight="467.0" fitWidth="551.0" opacity="0.15" pickOnBounds="true">
          <image>
             <Image url="@../logoFondo.png" />
          </image>
@@ -103,5 +105,6 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
+      <ParallelCamera />
    </children>
 </AnchorPane>

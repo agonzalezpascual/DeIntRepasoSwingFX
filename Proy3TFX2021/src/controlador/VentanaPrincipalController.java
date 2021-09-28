@@ -43,8 +43,10 @@ import javafx.scene.control.TreeTableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Callback;
 import javax.swing.UIManager;
 import modelo.Donacion;
@@ -158,6 +160,8 @@ public class VentanaPrincipalController implements Initializable {
     
     private IOBaseDatos IO = new IOBaseDatos();
     private IODonantesDat IOD = new IODonantesDat();
+    @FXML
+    private Rectangle rectangulo;
     
     /***
      * Método que inicia la clase controladora
@@ -168,6 +172,7 @@ public class VentanaPrincipalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
+        rectangulo.setOpacity(0);
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
@@ -363,8 +368,11 @@ public class VentanaPrincipalController implements Initializable {
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        rectangulo.setOpacity(0.22);
         stage.setScene(scene);
         stage.showAndWait();
+        rectangulo.setOpacity(0);
     
         Donante d = controlador.getDonante();
             if (d != null) {
@@ -433,8 +441,11 @@ public class VentanaPrincipalController implements Initializable {
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        rectangulo.setOpacity(0.22);
         stage.setScene(scene);
         stage.showAndWait();
+        rectangulo.setOpacity(0);
     
         Donante aux = controlador.getDonante();
             if (aux != null) {
