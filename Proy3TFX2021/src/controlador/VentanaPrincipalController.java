@@ -6,6 +6,8 @@
 package controlador;
 
 
+import com.jfoenix.controls.JFXComboBox;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -44,6 +46,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -129,6 +132,8 @@ public class VentanaPrincipalController implements Initializable {
     
     private ObservableList<Donante> donantes;
     
+    private ObservableList<String> ElemFiltro;
+    
     private ObservableList<Donante> filtroDonantes;
     
     private ObservableList<TreeItem<String>> compatiblesR;
@@ -162,6 +167,8 @@ public class VentanaPrincipalController implements Initializable {
     @FXML
     private Rectangle rectangulo;
     //private Rectangle rectangulo;
+    @FXML
+    private JFXComboBox<String> comboFiltro;
     
     /***
      * Método que inicia la clase controladora
@@ -276,7 +283,8 @@ public class VentanaPrincipalController implements Initializable {
      */
     public void iniciaCombos(){
     
-    grupoSang = FXCollections.observableArrayList();
+        //Combos Grupo Sanguíneo
+        grupoSang = FXCollections.observableArrayList();
         grupoSang.add("AB");
         grupoSang.add("A");
         grupoSang.add("B");
@@ -290,6 +298,14 @@ public class VentanaPrincipalController implements Initializable {
         //ComboRH.setItems(factorRH);
         ComboComRH.setItems(factorRH);
     
+        //Combos Filtro
+        
+        ElemFiltro = FXCollections.observableArrayList();
+        ElemFiltro.add("DNI");
+        ElemFiltro.add("Nombre");
+        ElemFiltro.add("Email");
+        comboFiltro.setItems(ElemFiltro);
+        
     }
     /***
      * Método que inicia la tabla Donantes y la tabla Donaciones
@@ -499,7 +515,8 @@ public class VentanaPrincipalController implements Initializable {
     private void buscaDonante(ActionEvent event) throws IOException {
         
         
-        
+        String Filtro = this.comboFiltro.getValue().toString();
+        if(Filtro.equals("DNI")){
         String filtroDNI = this.txtDNI.getText();
         
         this.filtroDonantes.clear();
@@ -512,6 +529,35 @@ public class VentanaPrincipalController implements Initializable {
             
             }
             this.tablaDonantes.setItems(filtroDonantes);
+    }else if(Filtro.equals("Nombre")){
+        String filtroDNI = this.txtDNI.getText();
+        
+        this.filtroDonantes.clear();
+            
+            for(Donante d:this.donantes){
+                if(d.getNombre().contains(filtroDNI)){
+                    this.filtroDonantes.add(d);
+               
+                }
+            
+            }
+            this.tablaDonantes.setItems(filtroDonantes);
+    }else if(Filtro.equals("Email")){
+        String filtroDNI = this.txtDNI.getText();
+        
+        this.filtroDonantes.clear();
+            
+            for(Donante d:this.donantes){
+                if(d.getCorreo().contains(filtroDNI)){
+                    this.filtroDonantes.add(d);
+               
+                }
+            
+            }
+            this.tablaDonantes.setItems(filtroDonantes);
+    }
+    
+    
     }
     /***
      * Actualiza los datos de la tabla Donantes
@@ -690,6 +736,10 @@ public class VentanaPrincipalController implements Initializable {
         item2.setOnAction((eItem1) -> {
     modificaDonante();
 });
+    }
+
+    @FXML
+    private void setFiltro(ActionEvent event) {
     }
   
 }

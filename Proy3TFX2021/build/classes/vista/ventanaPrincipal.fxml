@@ -103,6 +103,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
+                        <JFXComboBox fx:id="comboFiltro" layoutX="642.0" layoutY="176.0" onAction="#setFiltro" prefHeight="25.0" prefWidth="87.0" />
                      </children>
                   </AnchorPane>
                </content>
