@@ -96,9 +96,7 @@ public class VentanaPrincipalController implements Initializable {
     private TextField txtDonaDNI;
     @FXML
     private Button botDonaCons;
-    @FXML
     private TextField txtDonaNom;
-    @FXML
     private TextField txtDonaGrup;
     @FXML
     private TableView<Donacion> tablaDonanciones;
