@@ -70,6 +70,9 @@
                            <font>
                               <Font size="17.0" />
                            </font>
+                           <tooltip>
+                              <Tooltip text="Consultar" />
+                           </tooltip>
                         </Button>
                         <Button fx:id="botConTod" layoutX="425.0" layoutY="44.0" mnemonicParsing="false" onAction="#buscaTodos" opacity="0.0" prefHeight="38.0" prefWidth="42.0">
                            <cursor>
@@ -78,6 +81,9 @@
                            <font>
                               <Font size="17.0" />
                            </font>
+                           <tooltip>
+                              <Tooltip text="Reiniciar Búsqueda" />
+                           </tooltip>
                         </Button>
                         <JFXButton fx:id="botIns" layoutX="159.0" layoutY="620.0" onAction="#meteDonante" prefHeight="49.0" prefWidth="130.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="INSERTAR" textFill="#ff3d71">
                            <font>
@@ -103,7 +109,14 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="605.0" layoutY="51.0" onAction="#setFiltro" prefHeight="25.0" prefWidth="87.0" />
+                        <JFXComboBox fx:id="comboFiltro" layoutX="605.0" layoutY="51.0" onAction="#setFiltro" prefHeight="25.0" prefWidth="87.0">
+                           <tooltip>
+                              <Tooltip text="Filtro">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></JFXComboBox>
                      </children>
                   </AnchorPane>
                </content>
@@ -146,6 +159,9 @@
                            <font>
                               <Font size="18.0" />
                            </font>
+                           <tooltip>
+                              <Tooltip text="Consultar" />
+                           </tooltip>
                         </Button>
                      </children>
                   </AnchorPane>

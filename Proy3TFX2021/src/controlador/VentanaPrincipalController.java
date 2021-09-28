@@ -39,6 +39,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.TreeTableView;
@@ -190,7 +191,7 @@ public class VentanaPrincipalController implements Initializable {
         view.setFitHeight(35);
         view.setPreserveRatio(true);
         botDonaCons.setGraphic(view);
-        botConDNI.setGraphic(view);
+        botConDNI.setGraphic(view);    
         Image img2 = new Image("todos2.png");
         ImageView view2 = new ImageView(img2);
         view2.setFitHeight(35);
