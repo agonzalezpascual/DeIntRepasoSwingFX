@@ -1,6 +1,6 @@
 ﻿.tab{
 	-fx-pref-width: 160;
-	-fx-pref-height; 60
+	-fx-pref-height:60;
 }
 .tab-header-background{
 	-fx-background-color: #ff3d71;

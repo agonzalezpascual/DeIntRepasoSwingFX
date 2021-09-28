@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
@@ -63,25 +64,57 @@
             <Font name="System Bold" size="15.0" />
          </font></Label>
       <ParallelCamera />
-      <JFXTextField fx:id="txtDNI" layoutX="95.0" layoutY="55.0" opacity="0.3" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtDir" layoutX="95.0" layoutY="156.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtNom" layoutX="95.0" layoutY="103.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField layoutX="-230.0" layoutY="37.0" />
-      <JFXTextField fx:id="txtEmail" layoutX="95.0" layoutY="258.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtTel" layoutX="95.0" layoutY="208.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtLoc" layoutX="95.0" layoutY="310.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXComboBox fx:id="comboRH" layoutX="422.0" layoutY="245.0" opacity="0.4" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXComboBox fx:id="comboSang" layoutX="422.0" layoutY="172.0" opacity="0.4" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtCodPos" layoutX="421.0" layoutY="310.0" opacity="0.4" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #8FBAFF;" />
+      <JFXTextField fx:id="txtDNI" layoutX="95.0" layoutY="55.0" opacity="0.9" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect></JFXTextField>
+      <JFXTextField fx:id="txtDir" layoutX="95.0" layoutY="156.0" opacity="0.9" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNom" layoutX="95.0" layoutY="103.0" opacity="0.9" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtEmail" layoutX="95.0" layoutY="258.0" opacity="0.9" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtTel" layoutX="95.0" layoutY="208.0" opacity="0.9" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtLoc" layoutX="95.0" layoutY="310.0" opacity="0.9" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXComboBox fx:id="comboRH" layoutX="422.0" layoutY="245.0" opacity="0.9" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #8FBAFF;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <JFXComboBox fx:id="comboSang" layoutX="422.0" layoutY="172.0" opacity="0.9" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #8FBAFF;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <JFXTextField fx:id="txtCodPos" layoutX="421.0" layoutY="310.0" opacity="0.9" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #8FBAFF;" />
       <JFXButton fx:id="botGuar" layoutX="115.0" layoutY="382.0" onAction="#handlerGuardar" opacity="0.83" prefHeight="31.0" prefWidth="129.0" style="-fx-background-radius: 25; -fx-border-color: #4F92FF; -fx-border-width: 3; -fx-background-color: #8FBAFF; -fx-border-radius: 25;" text="GUARDAR" textFill="BLUE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton fx:id="botSal" layoutX="301.0" layoutY="382.0" onAction="#handlerSalir" opacity="0.83" prefHeight="31.0" prefWidth="129.0" style="-fx-background-radius: 25; -fx-border-color: #4F92FF; -fx-border-width: 3; -fx-background-color: #8FBAFF; -fx-border-radius: 25;" text="SALIR" textFill="BLUE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
    </children>
 </AnchorPane>
