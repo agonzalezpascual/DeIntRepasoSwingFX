@@ -44,6 +44,7 @@ import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.TreeTableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
@@ -184,7 +185,17 @@ public class VentanaPrincipalController implements Initializable {
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
-        
+        Image img = new Image("lupa2.png");
+        ImageView view = new ImageView(img);
+        view.setFitHeight(35);
+        view.setPreserveRatio(true);
+        botDonaCons.setGraphic(view);
+        botConDNI.setGraphic(view);
+        Image img2 = new Image("todos2.png");
+        ImageView view2 = new ImageView(img2);
+        view2.setFitHeight(35);
+        view2.setPreserveRatio(true);
+        botConTod.setGraphic(view2);
         try {
             iniciaRegistros();
         } catch (SQLException ex) {

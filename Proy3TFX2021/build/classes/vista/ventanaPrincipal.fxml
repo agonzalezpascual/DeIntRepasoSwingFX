@@ -63,7 +63,7 @@
                               <Font size="18.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="botConDNI" layoutX="477.0" layoutY="169.0" mnemonicParsing="false" onAction="#buscaDonante" text="Consultar DNI">
+                        <Button fx:id="botConDNI" layoutX="477.0" layoutY="169.0" mnemonicParsing="false" onAction="#buscaDonante" prefHeight="38.0" prefWidth="48.0">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -71,7 +71,7 @@
                               <Font size="17.0" />
                            </font>
                         </Button>
-                        <Button fx:id="botConTod" layoutX="270.0" layoutY="169.0" mnemonicParsing="false" onAction="#buscaTodos" text="Consultar todos">
+                        <Button fx:id="botConTod" layoutX="270.0" layoutY="169.0" mnemonicParsing="false" onAction="#buscaTodos" prefHeight="38.0" prefWidth="42.0">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -139,7 +139,7 @@
                               <Cursor fx:constant="TEXT" />
                            </cursor>
                         </TextField>
-                        <Button fx:id="botDonaCons" layoutX="474.0" layoutY="49.0" mnemonicParsing="false" onAction="#botConDon" prefHeight="41.0" prefWidth="241.0" text="Consultar Donaciones">
+                        <Button fx:id="botDonaCons" layoutX="466.0" layoutY="49.0" mnemonicParsing="false" onAction="#botConDon" prefHeight="32.0" prefWidth="46.0">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
