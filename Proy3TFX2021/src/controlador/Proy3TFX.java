@@ -31,6 +31,7 @@ public class Proy3TFX extends Application {
         Scene scene = new Scene(root);
         stage.setTitle("Proyecto Banco de Sangre");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
         
     }

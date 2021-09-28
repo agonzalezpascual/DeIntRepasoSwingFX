@@ -692,6 +692,7 @@ public class VentanaPrincipalController implements Initializable {
         stage.initModality(Modality.WINDOW_MODAL);
         stage.initStyle(StageStyle.DECORATED);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.showAndWait();   
     
         
