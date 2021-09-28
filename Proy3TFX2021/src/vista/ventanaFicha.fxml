@@ -10,7 +10,10 @@
 
 <AnchorPane id="AnchorPane" prefHeight="243.0" prefWidth="431.0" style="-fx-background-color: ffb8cb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VentanaFichaController">
    <children>
-      <JFXTextField fx:id="txtNombre" editable="false" focusTraversable="false" layoutX="163.0" layoutY="39.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FF90AE;" />
+      <JFXTextField fx:id="txtNombre" editable="false" focusTraversable="false" layoutX="163.0" layoutY="39.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FF90AE;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
       <Text layoutX="40.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
          <font>
             <Font size="20.0" />
@@ -19,11 +22,17 @@
          <font>
             <Font size="20.0" />
          </font></Text>
-      <JFXTextField fx:id="txtDNI" editable="false" focusTraversable="false" layoutX="163.0" layoutY="94.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FF90AE;" />
+      <JFXTextField fx:id="txtDNI" editable="false" focusTraversable="false" layoutX="163.0" layoutY="94.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FF90AE;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
       <Text layoutX="40.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo Sangre">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <JFXTextField fx:id="txtTipSang" editable="false" focusTraversable="false" layoutX="163.0" layoutY="150.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FF90AE;" />
+      <JFXTextField fx:id="txtTipSang" editable="false" focusTraversable="false" layoutX="163.0" layoutY="150.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: FF90AE;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
    </children>
 </AnchorPane>
