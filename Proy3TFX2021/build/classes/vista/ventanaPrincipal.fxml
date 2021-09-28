@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import java.net.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.canvas.*?>
@@ -15,7 +16,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="765.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VentanaPrincipalController">
    <children>
-      <ImageView fitHeight="736.0" fitWidth="931.0" opacity="0.17" pickOnBounds="true">
+      <ImageView fitHeight="771.0" fitWidth="931.0" opacity="0.41" pickOnBounds="true">
          <image>
             <Image url="@../logoFondo.png" />
          </image>
@@ -36,7 +37,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
-                        <TableView fx:id="tablaDonantes" layoutX="10.0" layoutY="246.0" onMouseClicked="#clickTabla" prefHeight="345.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
+                        <TableView fx:id="tablaDonantes" layoutX="10.0" layoutY="246.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="345.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
@@ -101,6 +102,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
+                        <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="771.0" layoutX="1.0" layoutY="-43.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
                      </children>
                   </AnchorPane>
                </content>
@@ -116,7 +118,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView fx:id="tablaDonanciones" layoutX="15.0" layoutY="259.0" prefHeight="345.0" prefWidth="893.0" stylesheets="@../jfx-table-view.css">
+                        <TableView fx:id="tablaDonanciones" layoutX="15.0" layoutY="259.0" opacity="0.7" prefHeight="345.0" prefWidth="893.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonaCod" prefWidth="138.0" text="Cod. Sanitario" />
                               <TableColumn fx:id="colDonaNomS" prefWidth="151.0" text="Nombre Sanitario" />

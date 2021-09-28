@@ -162,6 +162,7 @@ public class VentanaPrincipalController implements Initializable {
     private IODonantesDat IOD = new IODonantesDat();
     @FXML
     private Rectangle rectangulo;
+    //private Rectangle rectangulo;
     
     /***
      * Método que inicia la clase controladora
@@ -172,7 +173,7 @@ public class VentanaPrincipalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-        rectangulo.setOpacity(0);
+       rectangulo.setOpacity(0);
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
