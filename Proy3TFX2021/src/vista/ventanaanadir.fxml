@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
@@ -13,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VentanaanadirController">
    <children>
-      <ImageView fitHeight="467.0" fitWidth="551.0" opacity="0.41" pickOnBounds="true">
+      <ImageView fitHeight="467.0" fitWidth="551.0" opacity="0.15" pickOnBounds="true">
          <image>
             <Image url="@../logoFondo.png" />
          </image>
@@ -22,14 +21,30 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
+      <TextField fx:id="txtDNI" layoutX="95.0" layoutY="55.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtNom" layoutX="95.0" layoutY="103.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
       <Label layoutX="24.0" layoutY="108.0" text="Nombre">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
+      <TextField fx:id="txtDir" layoutX="95.0" layoutY="156.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
       <Label layoutX="19.0" layoutY="161.0" text="Dirección">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
+      <TextField fx:id="txtTel" layoutX="95.0" layoutY="208.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
       <Label layoutX="22.0" layoutY="213.0" text="Teléfono">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -46,42 +61,50 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
-      <DatePicker fx:id="selFecNa" layoutX="293.0" layoutY="93.0">
+      <DatePicker fx:id="selFecNa" layoutX="293.0" layoutY="103.0">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></DatePicker>
+      <ComboBox fx:id="comboSang" layoutX="419.0" layoutY="172.0" prefHeight="25.0" prefWidth="110.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="comboRH" layoutX="419.0" layoutY="234.0" prefHeight="25.0" prefWidth="110.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="botGuar" layoutX="206.0" layoutY="365.0" mnemonicParsing="false" onAction="#handlerGuardar" prefHeight="31.0" prefWidth="136.0" text="Guardar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="botSal" layoutX="206.0" layoutY="411.0" mnemonicParsing="false" onAction="#handlerSalir" prefHeight="31.0" prefWidth="136.0" text="Salir">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Label layoutX="19.0" layoutY="315.0" text="Localidad">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
+      <TextField fx:id="txtLoc" layoutX="95.0" layoutY="310.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
       <Label layoutX="46.0" layoutY="263.0" text="Email">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
-      <Label layoutX="346.0" layoutY="315.0" text="CP">
+      <TextField fx:id="txtEmail" layoutX="95.0" layoutY="258.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtCodPos" layoutX="340.0" layoutY="310.0" prefHeight="31.0" prefWidth="110.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="310.0" layoutY="315.0" text="CP">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
       <ParallelCamera />
-      <JFXTextField fx:id="txtDNI" layoutX="95.0" layoutY="55.0" opacity="0.3" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtDir" layoutX="95.0" layoutY="156.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtNom" layoutX="95.0" layoutY="103.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField layoutX="-230.0" layoutY="37.0" />
-      <JFXTextField fx:id="txtEmail" layoutX="95.0" layoutY="258.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtTel" layoutX="95.0" layoutY="208.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtLoc" layoutX="95.0" layoutY="310.0" opacity="0.4" style="-fx-background-color: #8FBAFF;" />
-      <JFXComboBox fx:id="comboRH" layoutX="422.0" layoutY="245.0" opacity="0.4" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXComboBox fx:id="comboSang" layoutX="422.0" layoutY="172.0" opacity="0.4" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXTextField fx:id="txtCodPos" layoutX="421.0" layoutY="310.0" opacity="0.4" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #8FBAFF;" />
-      <JFXButton fx:id="botGuar" layoutX="115.0" layoutY="382.0" onAction="#handlerGuardar" opacity="0.83" prefHeight="31.0" prefWidth="129.0" style="-fx-background-radius: 25; -fx-border-color: #4F92FF; -fx-border-width: 3; -fx-background-color: #8FBAFF; -fx-border-radius: 25;" text="GUARDAR" textFill="BLUE">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="botSal" layoutX="301.0" layoutY="382.0" onAction="#handlerSalir" opacity="0.83" prefHeight="31.0" prefWidth="129.0" style="-fx-background-radius: 25; -fx-border-color: #4F92FF; -fx-border-width: 3; -fx-background-color: #8FBAFF; -fx-border-radius: 25;" text="SALIR" textFill="BLUE">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </JFXButton>
    </children>
 </AnchorPane>
