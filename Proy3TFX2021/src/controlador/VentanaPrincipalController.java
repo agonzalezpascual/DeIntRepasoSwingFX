@@ -174,6 +174,7 @@ public class VentanaPrincipalController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
        rectangulo.setOpacity(0);
+       rectangulo.toFront();
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
@@ -496,7 +497,9 @@ public class VentanaPrincipalController implements Initializable {
      * @param event ActionEvent
      */
     @FXML
-    private void buscaDonante(ActionEvent event) {
+    private void buscaDonante(ActionEvent event) throws IOException {
+        
+        
         
         String filtroDNI = this.txtDNI.getText();
         
@@ -619,6 +622,18 @@ public class VentanaPrincipalController implements Initializable {
         donaciones.clear();
         
         String DNIDonante = this.txtDonaDNI.getText();
+        
+         FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/ventanaFicha.fxml"));
+        Parent root = loader.load();
+        VentanaFichaController controlador = loader.getController();
+        controlador.initAttributtes(DNIDonante);
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initStyle(StageStyle.DECORATED);
+        stage.setScene(scene);
+        stage.showAndWait();   
     
         
          for(Donacion d:IOD.leerDatosDat(DNIDonante)){

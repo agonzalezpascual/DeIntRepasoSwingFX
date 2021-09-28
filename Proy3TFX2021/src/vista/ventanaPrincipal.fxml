@@ -37,6 +37,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
+                        <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="730.0" layoutX="1.0" layoutY="-2.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
                         <TableView fx:id="tablaDonantes" layoutX="10.0" layoutY="246.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="345.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
@@ -102,7 +103,6 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="771.0" layoutX="1.0" layoutY="-43.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
                      </children>
                   </AnchorPane>
                </content>
