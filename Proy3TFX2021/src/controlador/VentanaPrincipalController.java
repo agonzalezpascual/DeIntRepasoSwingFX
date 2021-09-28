@@ -41,6 +41,7 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.TreeTableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
@@ -630,6 +631,8 @@ public class VentanaPrincipalController implements Initializable {
 
         Scene scene = new Scene(root);
         Stage stage = new Stage();
+        stage.setTitle("Ficha del Donante");
+        stage.getIcons().add(new Image("ficha.jpg"));
         stage.initModality(Modality.WINDOW_MODAL);
         stage.initStyle(StageStyle.DECORATED);
         stage.setScene(scene);
