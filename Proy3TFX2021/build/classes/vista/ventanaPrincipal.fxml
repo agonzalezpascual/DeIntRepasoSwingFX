@@ -38,24 +38,24 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
                         <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="730.0" layoutX="1.0" layoutY="-2.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
-                        <TableView fx:id="tablaDonantes" layoutX="10.0" layoutY="246.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="345.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
+                        <TableView fx:id="tablaDonantes" layoutX="1.0" layoutY="149.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="423.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
-                              <TableColumn fx:id="colDonDir" prefWidth="124.0" text="Dirección" />
-                              <TableColumn fx:id="colDonTel" prefWidth="98.0" text="Teléfono" />
-                              <TableColumn fx:id="colDonFec" prefWidth="157.0" text="Fecha de Nacimiento" />
-                              <TableColumn fx:id="colDonEmail" prefWidth="91.0" text="Email" />
-                              <TableColumn fx:id="colDonGrup" prefWidth="134.0" text="Grupo Sanguíneo" />
-                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="95.0" text="Factor RH" />
+                              <TableColumn fx:id="colDonDir" prefWidth="148.0" text="Dirección" />
+                              <TableColumn fx:id="colDonTel" prefWidth="100.0" text="Teléfono" />
+                              <TableColumn fx:id="colDonFec" prefWidth="131.0" text="Fecha de Nacimiento" />
+                              <TableColumn fx:id="colDonEmail" prefWidth="146.0" text="Email" />
+                              <TableColumn fx:id="colDonGrup" prefWidth="102.0" text="Grupo Sanguíneo" />
+                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="72.0" text="Factor RH" />
                            </columns>
                         </TableView>
-                        <Label layoutX="268.0" layoutY="106.0" text="DNI">
+                        <Label layoutX="106.0" layoutY="45.0" text="DNI">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtDNI" layoutX="341.0" layoutY="104.0">
+                        <TextField fx:id="txtDNI" layoutX="177.0" layoutY="43.0">
                            <cursor>
                               <Cursor fx:constant="TEXT" />
                            </cursor>
@@ -63,7 +63,7 @@
                               <Font size="18.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="botConDNI" layoutX="477.0" layoutY="169.0" mnemonicParsing="false" onAction="#buscaDonante" prefHeight="38.0" prefWidth="48.0">
+                        <Button fx:id="botConDNI" layoutX="504.0" layoutY="44.0" mnemonicParsing="false" onAction="#buscaDonante" prefHeight="38.0" prefWidth="48.0">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -71,7 +71,7 @@
                               <Font size="17.0" />
                            </font>
                         </Button>
-                        <Button fx:id="botConTod" layoutX="270.0" layoutY="169.0" mnemonicParsing="false" onAction="#buscaTodos" prefHeight="38.0" prefWidth="42.0">
+                        <Button fx:id="botConTod" layoutX="425.0" layoutY="44.0" mnemonicParsing="false" onAction="#buscaTodos" prefHeight="38.0" prefWidth="42.0">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -103,7 +103,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="642.0" layoutY="176.0" onAction="#setFiltro" prefHeight="25.0" prefWidth="87.0" />
+                        <JFXComboBox fx:id="comboFiltro" layoutX="605.0" layoutY="51.0" onAction="#setFiltro" prefHeight="25.0" prefWidth="87.0" />
                      </children>
                   </AnchorPane>
                </content>
