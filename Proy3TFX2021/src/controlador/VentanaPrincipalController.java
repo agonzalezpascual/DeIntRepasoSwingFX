@@ -617,7 +617,7 @@ public class VentanaPrincipalController implements Initializable {
      * @throws IOException 
      */
     @FXML
-    private void botConDon(ActionEvent event) throws IOException {
+    private void botConDon(ActionEvent event) throws IOException, SQLException {
         
         donaciones.clear();
         

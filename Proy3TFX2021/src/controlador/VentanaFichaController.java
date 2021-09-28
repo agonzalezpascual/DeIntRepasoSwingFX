@@ -7,6 +7,8 @@ package controlador;
 
 import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -39,10 +41,18 @@ public class VentanaFichaController implements Initializable {
     }    
     
     
-    public void initAttributtes(String DNI) {
+    public void initAttributtes(String DNI) throws SQLException {
         
-        //IOB.introduceRegistros();
+        ResultSet r = this.IOB.introduceRegistros("SELECT * FROM DONANTES where DNI = '"+DNI+"'");
         
+        r.next();
+        System.out.println(r.getString("Nombre"));
+
+
+        this.txtNombre.setText(r.getString("Nombre"));
+        this.txtTipSang.setText(r.getString("GrupoSang")+r.getString("FactorRH"));
+        this.txtDNI.setText(DNI);
+    
     }
     
 }

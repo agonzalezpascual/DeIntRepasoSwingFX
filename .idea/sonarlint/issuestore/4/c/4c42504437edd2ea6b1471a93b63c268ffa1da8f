@@ -1,12 +1,13 @@
 
 ?
-java:S1604„"(Make this anonymous inner class a lambda(Õ°÷¡
-f	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åáÔ”
->
-java:S1604<"(Make this anonymous inner class a lambda(¦“Ñø
-k	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÌÆþÿÿÿÿ
-f	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ëÁ§
+java:S1604Š"(Make this anonymous inner class a lambda(Õ°÷¡
 d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ýŸÞ¶øÿÿÿÿ
-S	java:S106I"9Replace this use of System.out or System.err by a logger.(¶ßïµýÿÿÿÿ
-f	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÈµà
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ýŸÞ¶øÿÿÿÿ
+f	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÈµà
+f	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åáÔ”
+k	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÌÆþÿÿÿÿ
+>
+java:S1604B"(Make this anonymous inner class a lambda(¦“Ñø
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(¶ßïµýÿÿÿÿ
+m	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ëÁ§8„¢¿ÛÂ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ý×¯Í8„¢¿ÛÂ/
