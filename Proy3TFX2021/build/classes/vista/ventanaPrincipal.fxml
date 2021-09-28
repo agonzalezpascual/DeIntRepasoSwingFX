@@ -30,22 +30,22 @@
             </Lighting>
          </effect>
       </ImageView>
-      <JFXTabPane prefHeight="771.0" prefWidth="931.0">
+      <JFXTabPane prefHeight="771.0" prefWidth="931.0" stylesheets="@../TabPaneBGColor.css">
          <tabs>
             <Tab text="Donantes">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
-                        <TableView fx:id="tablaDonantes" layoutX="16.0" layoutY="246.0" onMouseClicked="#clickTabla" opacity="0.87" prefHeight="345.0" prefWidth="874.0" stylesheets="@../jfx-table-view.css">
+                        <TableView fx:id="tablaDonantes" layoutX="10.0" layoutY="246.0" onMouseClicked="#clickTabla" prefHeight="345.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
                            <columns>
-                              <TableColumn fx:id="colDonDNI" prefWidth="86.0" text="DNI" />
-                              <TableColumn fx:id="colDonNom" prefWidth="99.0" text="Nombre" />
-                              <TableColumn fx:id="colDonDir" prefWidth="142.0" text="Dirección" />
+                              <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
+                              <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
+                              <TableColumn fx:id="colDonDir" prefWidth="124.0" text="Dirección" />
                               <TableColumn fx:id="colDonTel" prefWidth="98.0" text="Teléfono" />
-                              <TableColumn fx:id="colDonFec" prefWidth="113.0" text="Fecha de Nacimiento" />
-                              <TableColumn fx:id="colDonEmail" prefWidth="131.0" text="Email" />
-                              <TableColumn fx:id="colDonGrup" prefWidth="116.0" text="Grupo Sanguíneo" />
-                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="88.0" text="Factor RH" />
+                              <TableColumn fx:id="colDonFec" prefWidth="157.0" text="Fecha de Nacimiento" />
+                              <TableColumn fx:id="colDonEmail" prefWidth="91.0" text="Email" />
+                              <TableColumn fx:id="colDonGrup" prefWidth="134.0" text="Grupo Sanguíneo" />
+                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="95.0" text="Factor RH" />
                            </columns>
                         </TableView>
                         <Label layoutX="268.0" layoutY="106.0" text="DNI">
@@ -77,30 +77,30 @@
                               <Font size="17.0" />
                            </font>
                         </Button>
-                        <Button fx:id="botIns" alignment="CENTER" layoutX="94.0" layoutY="620.0" mnemonicParsing="false" onAction="#meteDonante" prefHeight="50.0" prefWidth="109.0" text="Insertar">
+                        <JFXButton fx:id="botIns" layoutX="159.0" layoutY="620.0" onAction="#meteDonante" prefHeight="49.0" prefWidth="130.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="INSERTAR" textFill="#ff3d71">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="botMod" layoutX="388.0" layoutY="620.0" onAction="#modificaDonante" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="MODIFICAR" textFill="#ff3d71">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <font>
-                              <Font size="23.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
-                        </Button>
-                        <Button fx:id="botMod" layoutX="388.0" layoutY="620.0" mnemonicParsing="false" onAction="#modificaDonante" text="Modificar">
+                        </JFXButton>
+                        <JFXButton fx:id="botEli" layoutX="623.0" layoutY="620.0" onAction="#eliminarDonante" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="ELIMNAR" textFill="#ff3d71">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <font>
-                              <Font size="23.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
-                        </Button>
-                        <Button fx:id="botEli" layoutX="700.0" layoutY="620.0" mnemonicParsing="false" onAction="#eliminarDonante" text="Eliminar">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <font>
-                              <Font size="23.0" />
-                           </font>
-                        </Button>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
                </content>
