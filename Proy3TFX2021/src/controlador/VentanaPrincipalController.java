@@ -203,9 +203,9 @@ public class VentanaPrincipalController implements Initializable {
             Logger.getLogger(VentanaPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
         }
        /*try {
-            this.IOD.introDatos("12345698F", 2, "2015-01-26", 501,false);
-            this.IOD.introDatos("12345698F", 2, "2016-01-26", 530,false);
-            this.IOD.introDatos("12345698F", 2, "2017-01-26", 530,false);
+            this.IOD.introDatos("29140654D", 2, "2015-01-26", 501,false);
+            this.IOD.introDatos("29140654D", 2, "2016-01-26", 530,false);
+            this.IOD.introDatos("29140654D", 2, "2017-01-26", 530,false);
             this.IOD.introDatos("12345666R", 1, "2015-02-20", 400,false);
             this.IOD.introDatos("54181245S", 3, "2015-03-29", 450,true);
             this.IOD.introDatos("32547698P", 1, "2012-01-26", 400,false);
