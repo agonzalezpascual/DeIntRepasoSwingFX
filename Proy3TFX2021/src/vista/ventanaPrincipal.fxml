@@ -42,15 +42,15 @@
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
-                              <TableColumn fx:id="colDonDir" prefWidth="148.0" text="Dirección" />
+                              <TableColumn fx:id="colDonDir" prefWidth="169.0" text="Dirección" />
                               <TableColumn fx:id="colDonTel" prefWidth="100.0" text="Teléfono" />
-                              <TableColumn fx:id="colDonFec" prefWidth="131.0" text="Fecha de Nacimiento" />
-                              <TableColumn fx:id="colDonEmail" prefWidth="146.0" text="Email" />
-                              <TableColumn fx:id="colDonGrup" prefWidth="102.0" text="Grupo Sanguíneo" />
-                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="72.0" text="Factor RH" />
+                              <TableColumn fx:id="colDonFec" prefWidth="128.0" text="Fecha de Nacimiento" />
+                              <TableColumn fx:id="colDonEmail" prefWidth="150.0" text="Email" />
+                              <TableColumn fx:id="colDonGrup" prefWidth="105.0" text="Grupo Sanguíneo" />
+                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="75.0" text="Factor RH" />
                            </columns>
                         </TableView>
-                        <Label layoutX="106.0" layoutY="51.0" text="DNI">
+                        <Label fx:id="labelFiltro" layoutX="75.0" layoutY="52.0" text="DNI">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -87,8 +87,22 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
-                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="30.0" onAction="#buscaTodos" prefHeight="75.0" prefWidth="75.0" />
-                        <JFXButton fx:id="botConDNI" layoutX="486.0" layoutY="32.0" onAction="#buscaDonante" prefHeight="75.0" prefWidth="75.0" />
+                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="30.0" onAction="#buscaTodos" prefHeight="75.0" prefWidth="75.0">
+                           <tooltip>
+                              <Tooltip text="Reiniciar">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></JFXButton>
+                        <JFXButton fx:id="botConDNI" layoutX="486.0" layoutY="32.0" onAction="#buscaDonante" prefHeight="75.0" prefWidth="75.0">
+                           <tooltip>
+                              <Tooltip text="Buscar">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></JFXButton>
                         <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="565.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../filtroicono.png" />
