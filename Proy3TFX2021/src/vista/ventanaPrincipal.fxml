@@ -63,28 +63,6 @@
                               <Font size="18.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="botConDNI" layoutX="504.0" layoutY="44.0" mnemonicParsing="false" onAction="#buscaDonante" prefHeight="38.0" prefWidth="48.0">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip text="Consultar" />
-                           </tooltip>
-                        </Button>
-                        <Button fx:id="botConTod" layoutX="425.0" layoutY="44.0" mnemonicParsing="false" onAction="#buscaTodos" prefHeight="38.0" prefWidth="42.0">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip text="Reiniciar Búsqueda" />
-                           </tooltip>
-                        </Button>
                         <JFXButton fx:id="botIns" layoutX="159.0" layoutY="620.0" onAction="#meteDonante" prefHeight="49.0" prefWidth="130.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="INSERTAR" textFill="#ff3d71">
                            <font>
                               <Font name="System Bold" size="20.0" />
@@ -101,7 +79,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton fx:id="botEli" layoutX="623.0" layoutY="620.0" onAction="#eliminarDonante" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="ELIMNAR" textFill="#ff3d71">
+                        <JFXButton fx:id="botEli" layoutX="623.0" layoutY="620.0" onAction="#eliminarDonante" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="ELIMINAR" textFill="#ff3d71">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -117,6 +95,8 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
+                        <JFXButton fx:id="botConTod" layoutX="415.0" layoutY="48.0" onAction="#buscaTodos" />
+                        <JFXButton fx:id="botConDNI" layoutX="497.0" layoutY="48.0" onAction="#buscaDonante" />
                      </children>
                   </AnchorPane>
                </content>
