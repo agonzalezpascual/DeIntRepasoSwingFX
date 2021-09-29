@@ -38,7 +38,7 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
                         <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="730.0" layoutX="1.0" layoutY="-2.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
-                        <TableView fx:id="tablaDonantes" layoutX="1.0" layoutY="149.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="423.0" prefWidth="931.0" stylesheets="@../jfx-table-view.css">
+                        <TableView fx:id="tablaDonantes" layoutX="1.0" layoutY="149.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="423.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
@@ -79,7 +79,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="565.0" layoutY="33.0" onAction="#setFiltro" opacity="0.0" prefHeight="75.0" prefWidth="75.0">
+                        <JFXComboBox fx:id="comboFiltro" layoutX="513.0" layoutY="53.0" onAction="#setFiltro" opacity="0.0" prefHeight="30.0" prefWidth="30.0">
                            <tooltip>
                               <Tooltip text="Filtro">
                                  <font>
@@ -87,24 +87,24 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
-                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="30.0" onAction="#buscaTodos" prefHeight="75.0" prefWidth="75.0" />
-                        <JFXButton fx:id="botConDNI" layoutX="486.0" layoutY="32.0" onAction="#buscaDonante" prefHeight="75.0" prefWidth="75.0" />
-                        <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="565.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <JFXButton fx:id="botConTod" layoutX="426.0" layoutY="53.0" onAction="#buscaTodos" prefHeight="30.0" prefWidth="30.0" />
+                        <JFXButton fx:id="botConDNI" layoutX="473.0" layoutY="58.0" onAction="#buscaDonante" prefHeight="30.0" prefWidth="30.0" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="520.0" layoutY="55.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../filtroicono.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="493.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="473.0" layoutY="53.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../lupa2.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="426.0" layoutY="42.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="426.0" layoutY="55.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../todos2.png" />
                            </image>
                         </ImageView>
-                        <JFXTextField fx:id="txtDNI" layoutX="176.0" layoutY="47.0" opacity="0.76" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: #7BADFF;">
+                        <JFXTextField fx:id="txtDNI" layoutX="176.0" layoutY="47.0" opacity="0.76" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: #9FC4FF;">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
@@ -139,22 +139,17 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtDonaDNI" layoutX="210.0" layoutY="50.0" prefHeight="39.0" prefWidth="220.0">
-                           <cursor>
-                              <Cursor fx:constant="TEXT" />
-                           </cursor>
-                        </TextField>
-                        <Button fx:id="botDonaCons" layoutX="466.0" layoutY="49.0" mnemonicParsing="false" onAction="#botConDon" prefHeight="32.0" prefWidth="46.0">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
+                        <JFXTextField fx:id="txtDonaDNI" layoutX="210.0" layoutY="47.0" prefHeight="38.0" prefWidth="220.0" style="-fx-background-color: #9FC4FF;">
                            <font>
-                              <Font size="18.0" />
+                              <Font name="System Bold" size="15.0" />
                            </font>
-                           <tooltip>
-                              <Tooltip text="Consultar" />
-                           </tooltip>
-                        </Button>
+                        </JFXTextField>
+                        <JFXButton fx:id="botDonaCons" layoutX="466.0" layoutY="41.0" onAction="#botConDon" prefHeight="50.0" prefWidth="50.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="466.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../lupa2.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                </content>
