@@ -34,6 +34,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellDataFeatures;
@@ -171,6 +172,8 @@ public class VentanaPrincipalController implements Initializable {
     //private Rectangle rectangulo;
     @FXML
     private JFXComboBox<String> comboFiltro;
+    @FXML
+    private Label labelFiltro;
     
     /***
      * Método que inicia la clase controladora
@@ -186,7 +189,7 @@ public class VentanaPrincipalController implements Initializable {
         iniciaCombos();
         iniciaTablaDon();
         iniciaLista();
-        Image img = new Image("lupa2.png");
+        /*Image img = new Image("lupa2.png");
         ImageView view = new ImageView(img);
         view.setFitHeight(35);
         view.setPreserveRatio(true);
@@ -196,7 +199,7 @@ public class VentanaPrincipalController implements Initializable {
         ImageView view2 = new ImageView(img2);
         view2.setFitHeight(35);
         view2.setPreserveRatio(true);
-        botConTod.setGraphic(view2);
+        botConTod.setGraphic(view2);*/
         try {
             iniciaRegistros();
         } catch (SQLException ex) {
@@ -317,6 +320,8 @@ public class VentanaPrincipalController implements Initializable {
         ElemFiltro.add("Nombre");
         ElemFiltro.add("Email");
         comboFiltro.setItems(ElemFiltro);
+        this.comboFiltro.setValue("DNI");
+
         
     }
     /***
@@ -761,6 +766,8 @@ public class VentanaPrincipalController implements Initializable {
 
     @FXML
     private void setFiltro(ActionEvent event) {
+        
+        labelFiltro.setText( this.comboFiltro.getValue().toString());
     }
   
 }

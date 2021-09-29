@@ -37,37 +37,24 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
-                        <ImageView fitHeight="36.0" fitWidth="46.0" layoutX="592.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../../Proy3TFX2021/src/filtroicono.png" />
-                           </image>
-                        </ImageView>
                         <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="730.0" layoutX="1.0" layoutY="-2.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
                         <TableView fx:id="tablaDonantes" layoutX="1.0" layoutY="149.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="423.0" prefWidth="931.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
-                              <TableColumn fx:id="colDonDir" prefWidth="148.0" text="Dirección" />
+                              <TableColumn fx:id="colDonDir" prefWidth="169.0" text="Dirección" />
                               <TableColumn fx:id="colDonTel" prefWidth="100.0" text="Teléfono" />
-                              <TableColumn fx:id="colDonFec" prefWidth="131.0" text="Fecha de Nacimiento" />
-                              <TableColumn fx:id="colDonEmail" prefWidth="146.0" text="Email" />
-                              <TableColumn fx:id="colDonGrup" prefWidth="102.0" text="Grupo Sanguíneo" />
-                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="72.0" text="Factor RH" />
+                              <TableColumn fx:id="colDonFec" prefWidth="128.0" text="Fecha de Nacimiento" />
+                              <TableColumn fx:id="colDonEmail" prefWidth="150.0" text="Email" />
+                              <TableColumn fx:id="colDonGrup" prefWidth="105.0" text="Grupo Sanguíneo" />
+                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="75.0" text="Factor RH" />
                            </columns>
                         </TableView>
-                        <Label layoutX="106.0" layoutY="45.0" text="DNI">
+                        <Label fx:id="labelFiltro" layoutX="75.0" layoutY="52.0" text="DNI">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtDNI" layoutX="177.0" layoutY="43.0">
-                           <cursor>
-                              <Cursor fx:constant="TEXT" />
-                           </cursor>
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </TextField>
                         <JFXButton fx:id="botIns" layoutX="159.0" layoutY="620.0" onAction="#meteDonante" prefHeight="49.0" prefWidth="130.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="INSERTAR" textFill="#ff3d71">
                            <font>
                               <Font name="System Bold" size="20.0" />
@@ -92,7 +79,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="592.0" layoutY="50.0" onAction="#setFiltro" prefHeight="41.0" prefWidth="46.0">
+                        <JFXComboBox fx:id="comboFiltro" layoutX="565.0" layoutY="33.0" onAction="#setFiltro" opacity="0.0" prefHeight="75.0" prefWidth="75.0">
                            <tooltip>
                               <Tooltip text="Filtro">
                                  <font>
@@ -100,8 +87,42 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
-                        <JFXButton fx:id="botConTod" layoutX="415.0" layoutY="48.0" onAction="#buscaTodos" />
-                        <JFXButton fx:id="botConDNI" layoutX="497.0" layoutY="48.0" onAction="#buscaDonante" />
+                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="30.0" onAction="#buscaTodos" prefHeight="75.0" prefWidth="75.0">
+                           <tooltip>
+                              <Tooltip text="Reiniciar">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></JFXButton>
+                        <JFXButton fx:id="botConDNI" layoutX="486.0" layoutY="32.0" onAction="#buscaDonante" prefHeight="75.0" prefWidth="75.0">
+                           <tooltip>
+                              <Tooltip text="Buscar">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></JFXButton>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="565.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../filtroicono.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="493.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../lupa2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="426.0" layoutY="42.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../todos2.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField fx:id="txtDNI" layoutX="176.0" layoutY="47.0" opacity="0.76" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: #7BADFF;">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
                      </children>
                   </AnchorPane>
                </content>
