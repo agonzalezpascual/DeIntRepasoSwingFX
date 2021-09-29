@@ -79,7 +79,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="565.0" layoutY="33.0" onAction="#setFiltro" opacity="0.0" prefHeight="75.0" prefWidth="75.0">
+                        <JFXComboBox fx:id="comboFiltro" layoutX="508.0" layoutY="53.0" onAction="#setFiltro" opacity="0.0" prefHeight="35.0" prefWidth="35.0">
                            <tooltip>
                               <Tooltip text="Filtro">
                                  <font>
@@ -87,7 +87,7 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
-                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="30.0" onAction="#buscaTodos" prefHeight="75.0" prefWidth="75.0">
+                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="53.0" onAction="#buscaTodos" prefHeight="30.0" prefWidth="30.0">
                            <tooltip>
                               <Tooltip text="Reiniciar">
                                  <font>
@@ -95,7 +95,7 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXButton>
-                        <JFXButton fx:id="botConDNI" layoutX="486.0" layoutY="32.0" onAction="#buscaDonante" prefHeight="75.0" prefWidth="75.0">
+                        <JFXButton fx:id="botConDNI" layoutX="463.0" layoutY="53.0" onAction="#buscaDonante" prefHeight="30.0" prefWidth="30.0">
                            <tooltip>
                               <Tooltip text="Buscar">
                                  <font>
@@ -103,17 +103,17 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXButton>
-                        <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="565.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="515.0" layoutY="53.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../filtroicono.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="493.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="463.0" layoutY="53.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../lupa2.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="426.0" layoutY="42.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="416.0" layoutY="53.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../todos2.png" />
                            </image>
