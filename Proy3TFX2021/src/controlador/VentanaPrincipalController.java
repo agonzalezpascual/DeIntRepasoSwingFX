@@ -206,20 +206,20 @@ public class VentanaPrincipalController implements Initializable {
             this.IOD.introDatos("29140654D", 2, "2015-01-26", 501,false);
             this.IOD.introDatos("29140654D", 2, "2016-01-26", 530,false);
             this.IOD.introDatos("29140654D", 2, "2017-01-26", 530,false);
-            this.IOD.introDatos("12345666R", 1, "2015-02-20", 400,false);
-            this.IOD.introDatos("54181245S", 3, "2015-03-29", 450,true);
-            this.IOD.introDatos("32547698P", 1, "2012-01-26", 400,false);
-            this.IOD.introDatos("32547698P", 2, "2015-01-26", 450,false);
-            this.IOD.introDatos("54181245S", 2, "2015-06-29", 350,false);
-            this.IOD.introDatos("54181245S", 2, "2017-04-20", 520,true);
-            this.IOD.introDatos("54181245S", 1, "2019-01-29", 500,false);
-            this.IOD.introDatos("54545454Y", 1, "2019-05-10", 450,false);
-            this.IOD.introDatos("54545454Y", 2, "2020-08-15", 420,false);
-            this.IOD.introDatos("66655578G", 3, "2019-02-2", 400,false);
-            this.IOD.introDatos("66655578G", 1, "2019-03-10", 500,true);
-            this.IOD.introDatos("66655578G", 3, "2020-09-15", 440,false);
-            this.IOD.introDatos("98765432H", 2, "2018-04-15", 520,true);
-            this.IOD.introDatos("98765432H", 2, "2020-03-12", 400,false);
+            this.IOD.introDatos("29540094K", 1, "2015-02-20", 400,false);
+            this.IOD.introDatos("29540094K", 3, "2015-03-29", 450,true);
+            this.IOD.introDatos("29540224G", 1, "2012-01-26", 400,false);
+            this.IOD.introDatos("29540224G", 2, "2015-01-26", 450,false);
+            this.IOD.introDatos("29640284L", 2, "2015-06-29", 350,false);
+            this.IOD.introDatos("29640284L", 2, "2017-04-20", 520,true);
+            this.IOD.introDatos("29540334F", 1, "2019-01-29", 500,false);
+            this.IOD.introDatos("29540334F", 1, "2019-05-10", 450,false);
+            this.IOD.introDatos("29540794D", 2, "2020-08-15", 420,false);
+            this.IOD.introDatos("29340964A", 3, "2019-02-2", 400,false);
+            this.IOD.introDatos("29240444H", 1, "2019-03-10", 500,true);
+            this.IOD.introDatos("29540714O", 3, "2020-09-15", 440,false);
+            this.IOD.introDatos("28822789V", 2, "2018-04-15", 520,true);
+            this.IOD.introDatos("29540714O", 2, "2020-03-12", 400,false);
             
         } catch (IOException ex) {
             Logger.getLogger(VentanaPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
@@ -680,20 +680,7 @@ public class VentanaPrincipalController implements Initializable {
         
         String DNIDonante = this.txtDonaDNI.getText();
         
-         FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/ventanaFicha.fxml"));
-        Parent root = loader.load();
-        VentanaFichaController controlador = loader.getController();
-        controlador.initAttributtes(DNIDonante);
-
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Ficha del Donante");
-        stage.getIcons().add(new Image("ficha.jpg"));
-        stage.initModality(Modality.WINDOW_MODAL);
-        stage.initStyle(StageStyle.DECORATED);
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.showAndWait();   
+           
     
         
          for(Donacion d:IOD.leerDatosDat(DNIDonante)){
@@ -707,17 +694,38 @@ public class VentanaPrincipalController implements Initializable {
         
         
         for(Donante d:this.donantes){
+            try{
                 if(d.getDNI().equals(DNIDonante)){
                     this.txtDonaNom.setText(d.getNombre());
                     this.txtDonaGrup.setText(d.getGrupoSang()+d.getFactorRH());
                
-                }
+                }}catch(Exception e){}
             
             }
         
-        
+        llamaFicha();
     }
 
+    private void llamaFicha() throws SQLException, IOException, IOException{
+        
+        String DNIDonante = this.txtDonaDNI.getText();
+    
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/ventanaFicha.fxml"));
+        Parent root = loader.load();
+        VentanaFichaController controlador = loader.getController();
+        controlador.initAttributtes(DNIDonante);
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setTitle("Ficha del Donante");
+        stage.getIcons().add(new Image("ficha.jpg"));
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initStyle(StageStyle.DECORATED);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.showAndWait(); 
+    
+    }
     @FXML
     private void clickTabla(MouseEvent event) {
         
