@@ -37,8 +37,13 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="827.0">
                      <children>
+                        <ImageView fitHeight="36.0" fitWidth="46.0" layoutX="592.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Proy3TFX2021/src/filtroicono.png" />
+                           </image>
+                        </ImageView>
                         <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="730.0" layoutX="1.0" layoutY="-2.0" mouseTransparent="true" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="931.0" />
-                        <TableView fx:id="tablaDonantes" layoutX="1.0" layoutY="149.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="423.0" prefWidth="905.0" stylesheets="@../jfx-table-view.css">
+                        <TableView fx:id="tablaDonantes" layoutX="1.0" layoutY="149.0" onMouseClicked="#clickTabla" opacity="0.7" prefHeight="423.0" prefWidth="931.0" stylesheets="@../jfx-table-view.css">
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
@@ -87,7 +92,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="605.0" layoutY="51.0" onAction="#setFiltro" prefHeight="25.0" prefWidth="87.0">
+                        <JFXComboBox fx:id="comboFiltro" layoutX="592.0" layoutY="50.0" onAction="#setFiltro" prefHeight="41.0" prefWidth="46.0">
                            <tooltip>
                               <Tooltip text="Filtro">
                                  <font>
