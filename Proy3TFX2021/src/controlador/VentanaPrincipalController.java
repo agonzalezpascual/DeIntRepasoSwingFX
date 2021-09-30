@@ -172,8 +172,9 @@ public class VentanaPrincipalController implements Initializable {
     //private Rectangle rectangulo;
     @FXML
     private JFXComboBox<String> comboFiltro;
-    @FXML
     private Label labelFiltro;
+    @FXML
+    private Label labelDNI;
     
     /***
      * Método que inicia la clase controladora
@@ -698,15 +699,16 @@ public class VentanaPrincipalController implements Initializable {
         this.tablaDonanciones.refresh();
         
         
-        for(Donante d:this.donantes){
-            try{
+       try{ for(Donante d:this.donantes){
+            
                 if(d.getDNI().equals(DNIDonante)){
                     this.txtDonaNom.setText(d.getNombre());
                     this.txtDonaGrup.setText(d.getGrupoSang()+d.getFactorRH());
                
-                }}catch(Exception e){}
+                
             
-            }
+            }}
+       }catch(Exception e){}
         
         llamaFicha();
     }
@@ -767,7 +769,9 @@ public class VentanaPrincipalController implements Initializable {
     @FXML
     private void setFiltro(ActionEvent event) {
         
-        labelFiltro.setText( this.comboFiltro.getValue().toString());
+        
+        
+        labelDNI.setText( this.comboFiltro.getValue().toString());
     }
   
 }
