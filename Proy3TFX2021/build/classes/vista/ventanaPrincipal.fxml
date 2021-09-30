@@ -42,15 +42,15 @@
                            <columns>
                               <TableColumn fx:id="colDonDNI" prefWidth="99.0" text="DNI" />
                               <TableColumn fx:id="colDonNom" prefWidth="104.0" text="Nombre" />
-                              <TableColumn fx:id="colDonDir" prefWidth="169.0" text="Dirección" />
+                              <TableColumn fx:id="colDonDir" prefWidth="148.0" text="Dirección" />
                               <TableColumn fx:id="colDonTel" prefWidth="100.0" text="Teléfono" />
-                              <TableColumn fx:id="colDonFec" prefWidth="128.0" text="Fecha de Nacimiento" />
-                              <TableColumn fx:id="colDonEmail" prefWidth="150.0" text="Email" />
-                              <TableColumn fx:id="colDonGrup" prefWidth="105.0" text="Grupo Sanguíneo" />
-                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="75.0" text="Factor RH" />
+                              <TableColumn fx:id="colDonFec" prefWidth="131.0" text="Fecha de Nacimiento" />
+                              <TableColumn fx:id="colDonEmail" prefWidth="146.0" text="Email" />
+                              <TableColumn fx:id="colDonGrup" prefWidth="102.0" text="Grupo Sanguíneo" />
+                              <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="72.0" text="Factor RH" />
                            </columns>
                         </TableView>
-                        <Label fx:id="labelFiltro" layoutX="75.0" layoutY="52.0" text="DNI">
+                        <Label layoutX="106.0" layoutY="51.0" text="DNI">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -79,7 +79,7 @@
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXComboBox fx:id="comboFiltro" layoutX="565.0" layoutY="33.0" onAction="#setFiltro" opacity="0.0" prefHeight="75.0" prefWidth="75.0">
+                        <JFXComboBox fx:id="comboFiltro" layoutX="513.0" layoutY="53.0" onAction="#setFiltro" opacity="0.0" prefHeight="30.0" prefWidth="30.0">
                            <tooltip>
                               <Tooltip text="Filtro">
                                  <font>
@@ -87,38 +87,24 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
-                        <JFXButton fx:id="botConTod" layoutX="416.0" layoutY="30.0" onAction="#buscaTodos" prefHeight="75.0" prefWidth="75.0">
-                           <tooltip>
-                              <Tooltip text="Reiniciar">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </Tooltip>
-                           </tooltip></JFXButton>
-                        <JFXButton fx:id="botConDNI" layoutX="486.0" layoutY="32.0" onAction="#buscaDonante" prefHeight="75.0" prefWidth="75.0">
-                           <tooltip>
-                              <Tooltip text="Buscar">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </Tooltip>
-                           </tooltip></JFXButton>
-                        <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="565.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <JFXButton fx:id="botConTod" layoutX="426.0" layoutY="53.0" onAction="#buscaTodos" prefHeight="30.0" prefWidth="30.0" />
+                        <JFXButton fx:id="botConDNI" layoutX="473.0" layoutY="58.0" onAction="#buscaDonante" prefHeight="30.0" prefWidth="30.0" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="520.0" layoutY="55.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../filtroicono.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="493.0" layoutY="39.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="473.0" layoutY="53.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../lupa2.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="426.0" layoutY="42.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="426.0" layoutY="55.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../todos2.png" />
                            </image>
                         </ImageView>
-                        <JFXTextField fx:id="txtDNI" layoutX="176.0" layoutY="47.0" opacity="0.76" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: #7BADFF;">
+                        <JFXTextField fx:id="txtDNI" layoutX="176.0" layoutY="47.0" opacity="0.76" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: #9FC4FF;">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
@@ -153,22 +139,17 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtDonaDNI" layoutX="210.0" layoutY="50.0" prefHeight="39.0" prefWidth="220.0">
-                           <cursor>
-                              <Cursor fx:constant="TEXT" />
-                           </cursor>
-                        </TextField>
-                        <Button fx:id="botDonaCons" layoutX="466.0" layoutY="49.0" mnemonicParsing="false" onAction="#botConDon" prefHeight="32.0" prefWidth="46.0">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
+                        <JFXTextField fx:id="txtDonaDNI" layoutX="210.0" layoutY="47.0" prefHeight="38.0" prefWidth="220.0" style="-fx-background-color: #9FC4FF;">
                            <font>
-                              <Font size="18.0" />
+                              <Font name="System Bold" size="15.0" />
                            </font>
-                           <tooltip>
-                              <Tooltip text="Consultar" />
-                           </tooltip>
-                        </Button>
+                        </JFXTextField>
+                        <JFXButton fx:id="botDonaCons" layoutX="466.0" layoutY="41.0" onAction="#botConDon" prefHeight="50.0" prefWidth="50.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="466.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../lupa2.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                </content>
@@ -184,6 +165,14 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="728.0" prefWidth="905.0">
                      <children>
+                        <JFXButton fx:id="botCom" layoutX="51.0" layoutY="249.0" onAction="#compatibilidad" prefHeight="50.0" prefWidth="282.0" style="-fx-background-radius: 25; -fx-border-color: ff3d71; -fx-border-width: 3; -fx-background-color: #ffb8cb; -fx-border-radius: 25;" text="Averigua Compatibilidad" textFill="#ff3d71">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
                         <TreeTableView fx:id="tablaArbolComp" layoutX="428.0" layoutY="47.0" opacity="0.87" prefHeight="604.0" prefWidth="441.0">
                            <columnResizePolicy>
                               <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -202,14 +191,6 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <Button fx:id="botCom" layoutX="114.0" layoutY="317.0" mnemonicParsing="false" onAction="#compatibilidad" prefHeight="52.0" prefWidth="214.0" text="Averigua Compatibilidad">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                        </Button>
                         <JFXComboBox fx:id="comboComGrup" layoutX="245.0" layoutY="127.0" prefHeight="31.0" prefWidth="88.0" />
                         <JFXComboBox fx:id="ComboComRH" layoutX="245.0" layoutY="192.0" prefHeight="31.0" prefWidth="88.0" />
                      </children>

@@ -126,3 +126,9 @@
 .table-view .menu-item .label {
     -fx-padding: 5 0 5 0;
 }
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #A2C6FF;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
