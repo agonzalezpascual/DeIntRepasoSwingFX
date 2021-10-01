@@ -33,6 +33,7 @@ public class Proy3TFX extends Application {
         stage.setTitle("Proyecto Banco de Sangre");
         stage.setScene(scene);
         stage.setResizable(false);
+        stage.getIcons().add(new Image("Jeringa.png"));
         stage.show();
         
     }
