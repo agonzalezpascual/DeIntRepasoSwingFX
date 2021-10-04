@@ -50,7 +50,7 @@
                               <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="72.0" text="Factor RH" />
                            </columns>
                         </TableView>
-                        <Label fx:id="labelDNI" layoutX="80.0" layoutY="51.0" text="DNI">
+                        <Label fx:id="labelDNI" layoutX="85.0" layoutY="51.0" text="DNI">
                            <font>
                               <Font size="24.0" />
                            </font>
