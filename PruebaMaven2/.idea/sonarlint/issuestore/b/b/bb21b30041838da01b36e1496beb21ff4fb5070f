@@ -1,0 +1,13 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Œû´Šùÿÿÿÿ8Øµ‰¸Å/
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(»¢™è8Ûµ‰¸Å/
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(»¢™è8İµ‰¸Å/
+Z	java:S1067"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8Şµ‰¸Å/
+j
+java:S2095,"HUse try-with-resources or close this "Connection" in a "finally" clause.(ğÁÏşÿÿÿÿ8úµ‰¸Å/
+d
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÁŸìÔ8øµ‰¸Å/
+d
+java:S2095-"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÁŸìÔ8úµ‰¸Å/
+j
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ğÁÏşÿÿÿÿ8úµ‰¸Å/

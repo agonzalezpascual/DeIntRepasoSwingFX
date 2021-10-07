@@ -1,0 +1,9 @@
+
+r
+java:S1450>"WRemove the "factorRH" field and declare it as a local variable in the relevant methods.(²ì‡¿ýÿÿÿÿ
+n
+java:S1450<"XRemove the "grupoSang" field and declare it as a local variable in the relevant methods.(÷ôÂÁ
+H
+java:S1135F"2Complete the task associated to this TODO comment.(…ïœ†
+O	java:S106­"9Replace this use of System.out or System.err by a logger.(òÀŽð
+g	java:S117Ž"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øù“Á

@@ -1,0 +1,37 @@
+
+a	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â›Ş…
+b	java:S116"MRename this field "IO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş˜õÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(‰ĞÒ„
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ŸáÚşÿÿÿÿ
+E
+java:S2093#"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Y
+java:S1854N">Remove this useless assignment to local variable "incidencia".(ÌØ“˜øÿÿÿÿ
+“
+java:S1130;"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(Ù¼Æ¡ùÿÿÿÿ
+J
+java:S1481="/Remove this unused "encontrado" local variable.(Şß‹şÿÿÿÿ
+V
+java:S1117?";Rename "fichero" which hides the field declared at line 28.(˜¤×¿úÿÿÿÿ
+H
+java:S1481A"-Remove this unused "contador" local variable.(¸¼¾ÿøÿÿÿÿ
+J
+java:S1481N"/Remove this unused "incidencia" local variable.(ÌØ“˜øÿÿÿÿ
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(µ„«¤ÿÿÿÿÿ
+P
+java:S1141V"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+f	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜”ã×
+t
+java:S1104"YMake ficheroSalida a static final constant or non-public and provide accessors if needed.(àšÔáıÿÿÿÿ
+m
+java:S1104"WMake datosSalida a static final constant or non-public and provide accessors if needed.(ŒÔß½
+n
+java:S1104"SMake fichero a static final constant or non-public and provide accessors if needed.(‡æƒ÷ùÿÿÿÿ
+c
+java:S1104"MMake X a static final constant or non-public and provide accessors if needed.(â›Ş…
+d
+java:S1104"NMake IO a static final constant or non-public and provide accessors if needed.(Ş˜õÿ
+i
+java:S2095?"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(˜¤×¿úÿÿÿÿ
+R
+java:S2589G"7Remove this expression which always evaluates to "true"(ôœµÑıÿÿÿÿ

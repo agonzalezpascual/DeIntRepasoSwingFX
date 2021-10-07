@@ -123,6 +123,7 @@
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </JFXTextField>
+                        <JFXButton fx:id="botAyuda" layoutX="801.0" layoutY="55.0" onAction="#handlerAyuda" text="Ayuda" />
                      </children>
                   </AnchorPane>
                </content>

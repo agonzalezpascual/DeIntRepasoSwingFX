@@ -6,6 +6,7 @@
 package controlador;
 
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import java.io.File;
 import java.io.IOException;
@@ -50,6 +51,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -60,6 +62,9 @@ import modelo.Donacion;
 import modelo.Donante;
 import modelo.IOBaseDatos;
 import modelo.IODonantesDat;
+import org.docgene.help.JavaHelpFactory;
+import org.docgene.help.gui.jfx.JFXHelpContentViewer;
+import org.xml.sax.SAXException;
 
 /**
  * FXML Controller class
@@ -175,6 +180,8 @@ public class VentanaPrincipalController implements Initializable {
     private Label labelFiltro;
     @FXML
     private Label labelDNI;
+    @FXML
+    private JFXButton botAyuda;
     
     /***
      * Método que inicia la clase controladora
@@ -184,6 +191,7 @@ public class VentanaPrincipalController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
         
        rectangulo.setOpacity(0);
        rectangulo.toFront();
@@ -772,6 +780,46 @@ public class VentanaPrincipalController implements Initializable {
         
         
         labelDNI.setText( this.comboFiltro.getValue().toString());
+    }
+   private JavaHelpFactory factory = null;
+   private JFXHelpContentViewer viewer = null;
+    private void createFactory() throws SAXException {
+        
+      URL url = this.getClass().getResource("sources/articles.zip");
+
+      factory = new JavaHelpFactory(url);
+      try {
+         factory.create();
+      } catch (IOException ex) {
+         ex.printStackTrace();
+      }
+   }
+    @FXML
+    private void handlerAyuda(ActionEvent event) throws IOException {
+    
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/ventanaHelp.fxml"));
+        Parent root = loader.load();
+        VentanaHelpController controlador = loader.getController();
+        
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setTitle("Ficha del Donante");
+        stage.getIcons().add(new Image("ficha.jpg"));
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initStyle(StageStyle.DECORATED);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.showAndWait(); 
+        
+    /*try {
+            createFactory();
+          
+        } catch (SAXException ex) {
+            Logger.getLogger(VentanaPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+        }*/
+    
     }
   
 }

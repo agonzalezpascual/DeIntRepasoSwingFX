@@ -1,0 +1,30 @@
+
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Ş¯€ëÿÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+Q
+java:S1128	";Remove this unused import 'javafx.scene.control.TableView'.(Ãàè˜
+f
+java:S1128"KRemove this unused import 'javax.xml.parsers.ParserConfigurationException'.(ûıƒøÿÿÿÿ
+R
+java:S1128"<Remove this unused import 'javax.xml.transform.Transformer'.(ˆ¬í¿
+m
+java:S1128"RRemove this unused import 'javax.xml.transform.TransformerConfigurationException'.(Î¯«¶ûÿÿÿÿ
+`
+java:S1128"ERemove this unused import 'javax.xml.transform.TransformerException'.(¨Û¥üÿÿÿÿ
+Y
+java:S1128"CRemove this unused import 'javax.xml.transform.TransformerFactory'.(ğ™“Ø
+Y
+java:S1128">Remove this unused import 'javax.xml.transform.dom.DOMSource'.(¾Ñ¶âùÿÿÿÿ
+Z
+java:S1128"DRemove this unused import 'javax.xml.transform.stream.StreamResult'.(Æ‹ëÿ
+b
+java:S11927"GDefine a constant instead of duplicating this literal "codsan" 3 times.(‹²­üÿÿÿÿ
+J
+java:S10667"/Merge this if statement with the enclosing one.(‹²­üÿÿÿÿ
+J
+java:S1066?"/Merge this if statement with the enclosing one.(‹²­üÿÿÿÿ
+J
+java:S1066G"/Merge this if statement with the enclosing one.(‹²­üÿÿÿÿ
+I
+java:S2755%"3Disable access to external entities in XML parsing.(Ò»Ê±
