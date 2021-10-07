@@ -50,7 +50,7 @@
                               <TableColumn fx:id="colDonRH" minWidth="0.0" prefWidth="72.0" text="Factor RH" />
                            </columns>
                         </TableView>
-                        <Label fx:id="labelDNI" layoutX="85.0" layoutY="51.0" text="DNI">
+                        <Label layoutX="106.0" layoutY="51.0" text="DNI">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -87,22 +87,8 @@
                                  </font>
                               </Tooltip>
                            </tooltip></JFXComboBox>
-                        <JFXButton fx:id="botConTod" layoutX="426.0" layoutY="53.0" onAction="#buscaTodos" prefHeight="30.0" prefWidth="30.0">
-                           <tooltip>
-                              <Tooltip text="Reiniciar">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </Tooltip>
-                           </tooltip></JFXButton>
-                        <JFXButton fx:id="botConDNI" layoutX="473.0" layoutY="58.0" onAction="#buscaDonante" prefHeight="30.0" prefWidth="30.0">
-                           <tooltip>
-                              <Tooltip text="Buscar">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </Tooltip>
-                           </tooltip></JFXButton>
+                        <JFXButton fx:id="botConTod" layoutX="426.0" layoutY="53.0" onAction="#buscaTodos" prefHeight="30.0" prefWidth="30.0" />
+                        <JFXButton fx:id="botConDNI" layoutX="473.0" layoutY="58.0" onAction="#buscaDonante" prefHeight="30.0" prefWidth="30.0" />
                         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="520.0" layoutY="55.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../filtroicono.png" />
@@ -123,7 +109,6 @@
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </JFXTextField>
-                        <JFXButton fx:id="botAyuda" layoutX="801.0" layoutY="55.0" onAction="#handlerAyuda" text="Ayuda" />
                      </children>
                   </AnchorPane>
                </content>
